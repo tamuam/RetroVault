@@ -28,6 +28,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        popupTabla = new javax.swing.JPopupMenu();
+        popAnyadir = new javax.swing.JMenuItem();
+        popEditar = new javax.swing.JMenuItem();
+        popEliminar = new javax.swing.JMenuItem();
         panelFiltros = new javax.swing.JPanel();
         Consola = new javax.swing.JLabel();
         cmbConsola = new javax.swing.JComboBox<>();
@@ -52,6 +56,15 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         mniEliminar = new javax.swing.JMenuItem();
         mnVista = new javax.swing.JMenu();
         mniActualizar = new javax.swing.JMenuItem();
+
+        popAnyadir.setText("añadir juego");
+        popupTabla.add(popAnyadir);
+
+        popEditar.setText("editar juego");
+        popupTabla.add(popEditar);
+
+        popEliminar.setText("Eliminar juego");
+        popupTabla.add(popEliminar);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("RetroVault  —  Biblioteca de Videojuegos Retro");
@@ -197,5 +210,9 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem mniSalir;
     private javax.swing.JPanel panelEstadisticas;
     private javax.swing.JPanel panelFiltros;
+    private javax.swing.JMenuItem popAnyadir;
+    private javax.swing.JMenuItem popEditar;
+    private javax.swing.JMenuItem popEliminar;
+    private javax.swing.JPopupMenu popupTabla;
     // End of variables declaration//GEN-END:variables
 }

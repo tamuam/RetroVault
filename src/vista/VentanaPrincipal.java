@@ -36,6 +36,22 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         btnFiltrar = new javax.swing.JButton();
         btnLimpiar = new javax.swing.JButton();
         btnAnyadir = new javax.swing.JButton();
+        ScrollPane = new javax.swing.JScrollPane();
+        Tablejuegos = new javax.swing.JTable();
+        panelEstadisticas = new javax.swing.JPanel();
+        IbTotal = new javax.swing.JLabel();
+        IbCompletados = new javax.swing.JLabel();
+        IbMedia = new javax.swing.JLabel();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        mniSalir = new javax.swing.JMenuItem();
+        mnJuegos = new javax.swing.JMenu();
+        mniAnyadir = new javax.swing.JMenuItem();
+        mniEditar = new javax.swing.JMenuItem();
+        jSeparator1 = new javax.swing.JPopupMenu.Separator();
+        mniEliminar = new javax.swing.JMenuItem();
+        mnVista = new javax.swing.JMenu();
+        mniActualizar = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("RetroVault  —  Biblioteca de Videojuegos Retro");
@@ -63,6 +79,70 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         panelFiltros.add(btnAnyadir);
 
         getContentPane().add(panelFiltros, java.awt.BorderLayout.PAGE_START);
+
+        Tablejuegos.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        Tablejuegos.setGridColor(new java.awt.Color(60, 60, 60));
+        Tablejuegos.setRowHeight(26);
+        Tablejuegos.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        ScrollPane.setViewportView(Tablejuegos);
+
+        getContentPane().add(ScrollPane, java.awt.BorderLayout.CENTER);
+
+        IbTotal.setText("Total : 0");
+        panelEstadisticas.add(IbTotal);
+
+        IbCompletados.setText("Completados: 0");
+        panelEstadisticas.add(IbCompletados);
+
+        IbMedia.setText("Puntuacion media: -");
+        panelEstadisticas.add(IbMedia);
+
+        getContentPane().add(panelEstadisticas, java.awt.BorderLayout.PAGE_END);
+
+        jMenuBar1.setName(""); // NOI18N
+
+        jMenu1.setText("Archivo");
+
+        mniSalir.setText("Salir");
+        jMenu1.add(mniSalir);
+
+        jMenuBar1.add(jMenu1);
+
+        mnJuegos.setText("Juegos");
+
+        mniAnyadir.setText("Añadir juego");
+        mnJuegos.add(mniAnyadir);
+
+        mniEditar.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        mniEditar.setText("Editar Juego");
+        mnJuegos.add(mniEditar);
+        mnJuegos.add(jSeparator1);
+
+        mniEliminar.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_DELETE, 0));
+        mniEliminar.setText("eliminar juego");
+        mnJuegos.add(mniEliminar);
+
+        jMenuBar1.add(mnJuegos);
+
+        mnVista.setText("Vista");
+
+        mniActualizar.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F5, 0));
+        mniActualizar.setText("Actualizar");
+        mnVista.add(mniActualizar);
+
+        jMenuBar1.add(mnVista);
+
+        setJMenuBar(jMenuBar1);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -95,11 +175,27 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Consola;
     private javax.swing.JLabel Estado;
+    private javax.swing.JLabel IbCompletados;
+    private javax.swing.JLabel IbMedia;
+    private javax.swing.JLabel IbTotal;
+    private javax.swing.JScrollPane ScrollPane;
+    private javax.swing.JTable Tablejuegos;
     private javax.swing.JButton btnAnyadir;
     private javax.swing.JButton btnFiltrar;
     private javax.swing.JButton btnLimpiar;
     private javax.swing.JComboBox<String> cmbConsola;
     private javax.swing.JComboBox<String> cmbEstado;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JPopupMenu.Separator jSeparator1;
+    private javax.swing.JMenu mnJuegos;
+    private javax.swing.JMenu mnVista;
+    private javax.swing.JMenuItem mniActualizar;
+    private javax.swing.JMenuItem mniAnyadir;
+    private javax.swing.JMenuItem mniEditar;
+    private javax.swing.JMenuItem mniEliminar;
+    private javax.swing.JMenuItem mniSalir;
+    private javax.swing.JPanel panelEstadisticas;
     private javax.swing.JPanel panelFiltros;
     // End of variables declaration//GEN-END:variables
 }

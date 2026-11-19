@@ -4,6 +4,12 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/usuario/Documents/NetBeansProjects/RetroVault/src/retrovault/RetroVault.java</file>
+            <file>file:/C:/Users/usuario/Documents/NetBeansProjects/RetroVault/src/modelo/juego.java</file>
+            <file>file:/C:/Users/usuario/Documents/NetBeansProjects/RetroVault/src/datos/DatabaseManager.java</file>
+            <file>file:/C:/Users/usuario/Documents/NetBeansProjects/RetroVault/src/datos/JuegoDAO.java</file>
+            <file>file:/C:/Users/usuario/Documents/NetBeansProjects/RetroVault/src/vista/JuegosTableModel.java</file>
+            <file>file:/C:/Users/usuario/Documents/NetBeansProjects/RetroVault/src/vista/ConsolaColorRenderer.java</file>
+            <file>file:/C:/Users/usuario/Documents/NetBeansProjects/RetroVault/src/vista/VentanaPrincipal.java</file>
         </group>
     </open-files>
 </project-private>
